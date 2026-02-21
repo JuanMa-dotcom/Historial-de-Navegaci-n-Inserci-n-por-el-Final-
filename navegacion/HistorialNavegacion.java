@@ -8,6 +8,8 @@ package com.mycompany.navegacion;
  *
  * @author jv134
  */
+
+//clase de historial de navegacion 
 class HistorialNavegacion {
     private Nodo cabeza;
     private int tamanio;
@@ -49,19 +51,19 @@ class HistorialNavegacion {
         return lista;
     }
 
-    // Eliminar cabeza (simula retroceder)
+    //Retroceder 
     public void eliminarCabeza() {
         if (cabeza == null) return;
         cabeza = cabeza.siguiente;
         if (cabeza != null) cabeza.anterior = null;
         tamanio--;
     }
-
-    public boolean estaVacio() {
-        return cabeza == null;
-    }
-
     public int getTamanio() {
         return tamanio;
+   
+    }
+     public boolean estaVacio() {
+        return cabeza == null;
+   
     }
 }
