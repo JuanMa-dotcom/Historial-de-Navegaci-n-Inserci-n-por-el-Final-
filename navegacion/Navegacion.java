@@ -55,7 +55,7 @@ public class Navegacion extends JFrame {
         refrescarVista();
     }
 
-    // ----------------------------------------------------------------
+ 
     private JPanel crearBarraSuperior() {
         JPanel panel = new JPanel(new BorderLayout(12, 0));
         panel.setBackground(BG_PANEL);
@@ -108,7 +108,7 @@ public class Navegacion extends JFrame {
         return panel;
     }
 
-    // ----------------------------------------------------------------
+   -
     private JPanel crearPanelCentral() {
         JPanel panel = new JPanel(new BorderLayout(16, 0));
         panel.setBackground(BG_DARK);
@@ -217,7 +217,7 @@ public class Navegacion extends JFrame {
         return panel;
     }
 
-    // ----------------------------------------------------------------
+    //panel
     private JPanel crearBarraEstado() {
         JPanel bar = new JPanel(new BorderLayout());
         bar.setBackground(BG_PANEL);
@@ -239,7 +239,7 @@ public class Navegacion extends JFrame {
         return bar;
     }
 
-    // ----------------------------------------------------------------
+    //mas y mas botones
     private JButton crearBoton(String texto, final Color color) {
         JButton btn = new JButton(texto) {
             protected void paintComponent(Graphics g) {
@@ -272,7 +272,7 @@ public class Navegacion extends JFrame {
         return btn;
     }
 
-    // ======================== ACCIONES ==============================
+    //Acciones
 
     private void accionNavegar() {
         String url = urlField.getText().trim();
@@ -332,7 +332,7 @@ public class Navegacion extends JFrame {
         countLabel.setText("Nodos en la lista: " + historial.getTamanio());
     }
 
-    // ======================== MAIN ==================================
+    //Main
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(
